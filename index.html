@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Billy</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+  <!-- header & navbar -->
+  <header>
+    <div class="container">
+      <div class="logo">Billy</div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+  <!-- hero -->
+   <main id="hero" class="hero">
+    <img src="img/billy.jpg" alt="billy" class="wajah">
+    <h1>Hallo, saya <span class="nama">Billy</span> 👋</h1>
+    <p>Mahasiswa Teknik Informatika - UNIVERSITAS PASUNDAN</p>
+   </main>
+
+   <!-- Tentang -->
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        Saya adalah seorang mahasiswa Teknik Informatika yang memiliki ketertarikan besar di bidang Web Development. Saat ini saya masih belajar dasar-dasar HTML, CSS, dan JavaScript, sambil terus mengembangkan keterampilan pemrograman lainnya.
+      </p>
+      <br>
+      <p>
+        Saya suka mencoba hal baru, bereksperimen dengan ide-ide sederhana, dan perlahan membangun fondasi untuk menjadi seorang Full-Stack Web Developer di masa depan.
+      </p>
+    </section>
+
+    <!-- keahlian -->
+     <section id="skill" class="skill">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML BASIC</li>
+        <li>CSS BASIC</li>
+        <li>PYTHON BASIC</li>
+        <li>GIT BASIC</li>
+      </ul>
+     </section>
+
+     <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Hubungi saya melalui:</p>
+        <ul>
+          <li><a href="mailto:billy.sakha02@gmail.com">billy.sakha02@gmail.com</a></li>
+          <li><a href="linkedin://in/Billy Sakha" 
+                 onclick="window.location='https://www.linkedin.com/in/billysakha'" 
+                 target="_blank">
+                 LinkedIn
+              </a>
+          <li><a href="https://github.com/BillySakha" target="_blank">GitHub</a></li>
+
+
+        </ul>
+      </section>
+
+      <!-- footer -->
+       <footer>
+        <p>&copy; <span id="year"></span> Billy B Sakha</p>
+       </footer>
+
+        <script>
+          // biar tahun otomatis update
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+  
+</body>
+</html>

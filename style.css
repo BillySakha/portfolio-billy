@@ -1,0 +1,299 @@
+/* css reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style */
+body { 
+    background-color: #0f1115;
+    color: #e9ecf1;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+/* header & navbar */
+header { 
+    display: flex;
+    background: #151821;
+    justify-content: center; /* center container */
+    position: sticky;
+    top: 0;
+    padding: 12px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+header .container { 
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* tambah padding kiri-kanan */
+    display: flex;
+    justify-content: space-between; /* logo kiri, nav kanan */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6ca0ff;
+    /* beri sedikit margin kiri supaya nggak nempel banget */
+    margin-right: 20px; 
+}
+
+nav ul { 
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    position: relative;
+    color: #b8c0cc;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: color 0.3 ease;
+}
+
+nav a:hover { 
+    color: #fff;
+    background: #272c38 ;
+}
+
+nav a:hover::after { 
+    width: 100%;
+}
+
+nav a::after { 
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #6ca0ff;
+    transition: width 0.3s ease;
+}
+
+
+/* hero */
+#hero { 
+    padding: 60px 20px;
+    border-bottom: 1px solid #232634;
+    text-align: center;
+}
+
+.hero p { 
+    margin-top: 10px;
+}
+
+.nama { 
+    color: #6ca0ff;
+}
+
+.wajah { 
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border: 3px solid #6ca0ff;
+    margin-bottom: 20px;
+    
+    
+}
+
+section { 
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+
+}
+
+section h2 { 
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #6ca0ff;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Tentang */
+#about { 
+    background: #151821 ;
+    padding: 60px 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.about p { 
+    max-width: 700px;
+    margin: auto;
+    color: #cdd3dd;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* skill */
+#skill { 
+    background: #151821 ;
+    padding: 60px 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    text-align: center;
+    
+}
+
+.skill ul { 
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 14px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.skill li { 
+    background: rgba(54, 65, 91, 0.8);
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 1px solid #141620;
+    color: #e9ecf1;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.skill li:hover { 
+    border-color: #6ca0ff;
+    box-shadow: 0 0 12px rgba(108,160,255,0.6);
+    transform: translateY(-4px);
+    background: rgba(28, 34, 50, 0.9) ;
+}
+
+/* contact */
+#contact { 
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    background: #151821;
+    padding: 60px 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.contact h2 { 
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact p { 
+    color: #b8c0cc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact ul { 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contact li { 
+    background: #262d3e;
+    border: 1px solid #232634;
+    border-radius: 12px;
+    transition: 0.3s ease ;
+}
+
+.contact a { 
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #6ca0ff;
+    font-weight: bold;
+    transition: all 0.3 ease;
+}
+
+.contact li:hover { 
+    background: #1a1e28;
+    transform: translateY(-3px);
+}
+
+.contact li:hover a { 
+    color: #fff;
+}
+
+/* footer */
+footer { 
+    border-top: 1px solid #232634;
+    text-align: center;
+    padding: 20px;
+    color: #b8c0cc;
+    font-size: 0.9rem;
+}
+
+
+
+/* ====================
+    RESPONSIVE DESIGN
+================== */
+
+@media (max-width: 768px) { 
+    /* navbar */
+    header{ 
+        padding: 10px 15px;
+    }
+
+    nav ul { 
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo { 
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 15px; /* spacing logo ke nav */
+    }
+
+    /* hero */
+    #hero .wajah { 
+        width: 100px;
+        height: 100px;
+    }
+
+    #hero h1 { 
+        font-size: 1.5rem;
+    }
+
+    #hero p { 
+        font-size: 0.9rem;
+    }
+
+    /* section */
+    section { 
+        padding: 30px 15px;
+    }
+
+    .skill ul, .contact ul { 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
